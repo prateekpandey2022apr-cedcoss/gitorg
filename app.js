@@ -164,7 +164,7 @@ for (const [repo, commits] of commitInfo) {
   commitUrl = [];
 
   for (const commit of commits) {
-    if (commit.author.login === USER) {
+    if (commit.author.login.toLowerCase() === USER.toLowerCase()) {
       commitUrl.push(`${commit.html_url}\n`);
     }
   }
