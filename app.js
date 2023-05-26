@@ -25,7 +25,9 @@ const rl = readline.createInterface({
 
 const ORG = await rl.question("Enter org: ");
 const USER = await rl.question("Enter username: ");
-const SINCE = await rl.question("Enter since (optional): ");
+const SINCE = await rl.question(
+  "Enter since (optional: YYYY-MM-DDTHH:MM:SSZ) : "
+);
 
 rl.close();
 
